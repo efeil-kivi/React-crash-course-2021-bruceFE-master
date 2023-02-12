@@ -15,6 +15,7 @@ export const ProjectListScreen = () => {
   const [list, setList] = useState([]);
 
   const debouncedParam = useDebounce(param, 2000); //每次param变化都会运行
+                                                          //由于用了泛型
   useEffect(() => {
     fetch(
       `${apiUrl}/projects?${qs.stringify(cleanObject(debouncedParam))}` //qs.sstringify将数据直接转换成url需要的格式like:xxx=xx&xxx=xxx....
