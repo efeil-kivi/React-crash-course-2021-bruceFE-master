@@ -6,4 +6,4 @@
 function useState<T>(a:<t>|(()=>T)):[T, dispatch<SetStateAction<T>>];//传统函数
 export const useDebounce = <T>(value:T, delay?: number) => {}
 ```
-
+# 查看 [typeScript的类型.md](typeScript的类型.md) 
