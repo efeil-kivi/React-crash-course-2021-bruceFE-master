@@ -21,7 +21,8 @@ export const useMount = (callback: () => void) => {
     callback();
   }, []);
 };
-export const useDebounce = <T>(value: T, delay?: number) => {//将value由any改成unknown所以useDebounce也是unknown；
+export const useDebounce = <T>(value: T, delay?: number) => {
+  //将value由any改成unknown所以useDebounce也是unknown；
   // 然后cleanObject出错，因为unknown不能被赋给任何值.解决方法1加“:any”--export const useDebounce = (value: unknown, delay?: number):any => {
   //解决方法2:泛型。
   //?:传进来的为空or number

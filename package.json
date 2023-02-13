@@ -5,6 +5,7 @@
   },
   "version": "0.0.0",
   "devDependencies": {
-    "json-server": "^0.17.1"
+    "json-server": "^0.17.1",
+    "json-server-auth": "^2.1.0"
   }
 }
